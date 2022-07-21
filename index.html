@@ -11,6 +11,11 @@
     /* .hamlet{
         background-color: yellow;
     } */
+
+    /* #play span{
+        background-color: pink;
+    } */
+    
   </style>
  </head>
  <body>
@@ -18,17 +23,25 @@
      <h1>DOM Play</h1>
         <nav class="topnav" id="myTopnav">
             <a href="index.html" class="active">Home</a>
-            <a href="#" target="_blank">Name of project goes here</a>
+            <a href="#" target="_blank">DOM Play</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </nav>
      </header>
-     
-   <main class="wrapper"> 
-    <p>
-        <span onclick="this.style.backgroundColor='yellow'">Moana: I am Moana of Motunui. You will board my boat, sail across the sea, and restore the heart of Te Fiti.</span>
-    </p>
-    <p class="maui">Skull: Are you talking to me?</p>
-    <p class="moana">Moana: What did you say?</p>
+   <main class="wrapper">
+    <h2 style="font-weight:bold; text-align: center;">This is a Javascript page, using the DOM and events to highlight actor's lines in a script.</h2> 
+    <h3 style="font-style:italic;">Mean Girls: Inviting Cady to lunch</h3>
+    <div id="play">
+        <!-- data is from js, actor is from us -->
+        <p><span data-actor="regina">Regina: Cady, could you give us some privacy for, like, one second?</span></p>
+        <p><span data-actor="cady">Cady: Sure.</span></p>
+        <p><span data-actor="regina">Regina: (breaking huddle) Okay, let me just say that we don't do this a lot, so you should know that this is, like, a huge deal.</span></p>
+        <p><span data-actor="gretchen">Gretchen: We want to invite you to have lunch with us every day for the rest of the week.</span></p>
+        <p><span data-actor="cady">Cady: Oh, okay...</span></p>
+        <p><span data-actor="gretchen">Gretchen: Great. So we'll see you tomorrow.</span></p>
+        <p><span data-actor="karen">Karen: On Tuesdays we wear pink.</span></p>
+    </div>
+
+
      <footer>
       <p><small>&copy; 2022 by 
           Dolores Eusebio, All Rights Reserved ~ 

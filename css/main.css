@@ -31,7 +31,7 @@ p {
     margin: 1em; /* Top Right Bottom Left (TRBL) */
 }
 
-h2,h3 {
+h2,h3,h4 {
     font-weight: normal;
     margin-left: 1em;
     line-height: 1em;
